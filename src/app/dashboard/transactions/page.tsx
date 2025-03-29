@@ -2,11 +2,9 @@
 
 import { useState } from 'react';
 import {
-  MagnifyingGlassIcon,
   ArrowDownTrayIcon,
   CheckCircleIcon,
   XCircleIcon,
-  ClockIcon,
 } from '@heroicons/react/24/outline';
 import { exportToCSV } from '@/utils/exportToCSV';
 

@@ -17,6 +17,7 @@ export default function LoginPage() {
       await signIn(email, password);
       router.push('/dashboard');
     } catch (error) {
+      console.error(error);
       setError('Invalid email or password');
     }
   };

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import {
-  BellIcon,
   CheckCircleIcon,
   ExclamationTriangleIcon,
   InformationCircleIcon,
@@ -60,7 +59,7 @@ const mockLogs: AdminLog[] = [
 
 export default function NotificationsPage() {
   const [notifications, setNotifications] = useState<Notification[]>(mockNotifications);
-  const [logs, setLogs] = useState<AdminLog[]>(mockLogs);
+  const [logs,] = useState<AdminLog[]>(mockLogs);
   const [activeTab, setActiveTab] = useState<'notifications' | 'logs'>('notifications');
 
   useEffect(() => {

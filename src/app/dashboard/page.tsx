@@ -1,13 +1,11 @@
 "use client";
 
-import { useState } from 'react';
 import Link from 'next/link';
 import {
   UsersIcon,
   CurrencyDollarIcon,
   ShieldExclamationIcon,
   WalletIcon,
-  BellIcon,
   ArrowUpIcon,
   ArrowDownIcon,
 } from '@heroicons/react/24/outline';
