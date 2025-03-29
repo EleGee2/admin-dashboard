@@ -5,8 +5,8 @@ import { useRouter } from 'next/navigation';
 import { useAuthContext } from '@/components/auth/AuthProvider';
 
 export default function LoginPage() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('jerome@yopmail.com');
+  const [password, setPassword] = useState('qwerty123');
   const [error, setError] = useState('');
   const router = useRouter();
   const { signIn } = useAuthContext();
