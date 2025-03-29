@@ -1,4 +1,10 @@
-export function exportToCSV(filename: string, rows: any[]) {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export function exportToCSV<T extends Record<string, any>>(filename: string, rows: T[]) {
+  if (rows.length === 0) {
+    console.error('No data to export');
+    return;
+  }
+
   const csvContent = [
     Object.keys(rows[0]).join(','), // header row
     ...rows.map(row => Object.values(row).join(',')) // data rows
